@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <interfaces/hid-trackball.dtsi>  //zmk-hid-trackball-interface
+#include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -39,6 +41,33 @@
 &mt {
     tapping-term-ms = <300>;
     flavor = "tap-preferred";
+};
+
+/ {
+    input_processors {
+        zip_wheel_scaler: zip_wheel_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+            track-remainders;
+        };
+    };
+};
+
+&msc_input_listener {
+    speed_up {
+        layers = <layer_3>;
+        input-processors = <&zip_wheel_scaler 3 1>; //scroll faster x3
+    };
+};
+
+&trackball_listener {
+    scroller {
+        layers = <layer_3>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>; //trackball as scroller
+    };
 };
 
 / {
