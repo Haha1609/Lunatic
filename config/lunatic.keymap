@@ -16,6 +16,12 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <interfaces/hid-trackball.dtsi>  //zmk-hid-trackball-interface
 
+#define Main 0
+#define Num 1
+#define Mouse 2
+#define Opt1 3
+#define Opt2 4
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 900   // mousescroll SPEED
 
@@ -58,14 +64,14 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <raise_layer>;
+        layers = <Mouse>;
         input-processors = <&zip_wheel_scaler 3 1>; //scroll faster x3
     };
 };
 
 &trackball_listener {
     scroller {
-        layers = <raise_layer>;
+        layers = <Mouse>;
         input-processors =
             <&zip_xy_to_scroll_mapper>; //trackball as scroller
     };
@@ -130,8 +136,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "Default Layer";
+        Main {
+            display-name = "Main";
             bindings = <
 &mt CAPS ESC          &kp N1    &kp N2    &kp N3     &kp N4       &kp N5     &kp N6    &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
 &lt 3 TAB             &kp Q     &kp W     &kp E      &kp R        &kp T      &kp Y     &kp U      &kp I      &kp O     &kp P      &kp PLUS
@@ -144,8 +150,8 @@
             sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
         };
 
-        lower_layer {
-            display-name = "Lower Layer";
+        Num {
+            display-name = "Num";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -158,8 +164,8 @@
             sensor-bindings = <&Scroll_LR>, <&Scroll_LR>;
         };
 
-        raise_layer {
-            display-name = "Raise Layer";
+        Mouse {
+            display-name = "mouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -172,7 +178,7 @@
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
         };
 
-        layer_3 {
+         {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -185,7 +191,8 @@
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
         };
 
-        layer_4 {
+        
+        Opt2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
