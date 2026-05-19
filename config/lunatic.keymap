@@ -58,14 +58,14 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <layer_3>;
+        layers = <raise_layer>;
         input-processors = <&zip_wheel_scaler 3 1>; //scroll faster x3
     };
 };
 
 &trackball_listener {
     scroller {
-        layers = <layer_3>;
+        layers = <raise_layer>;
         input-processors =
             <&zip_xy_to_scroll_mapper>; //trackball as scroller
     };
