@@ -70,7 +70,9 @@
 &trackball_listener {
     scroller {
         layers = <Mouse>;
-        input-processors = <&zip_xy_to_scroll_mapper>; //trackball as scroller
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_to_scroll_mapper>;
     };
 };
 
