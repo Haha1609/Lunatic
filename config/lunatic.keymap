@@ -163,17 +163,17 @@
             key-positions = <16 17>;
         };
 
-        MB1 {
+        M1 {
             bindings = <&mkp MB1>;
             key-positions = <14 26>;
         };
 
-        MB2 {
+        M2 {
             bindings = <&mkp MB2>;
             key-positions = <16 28>;
         };
 
-        MB3 {
+        M3 {
             bindings = <&mkp MB3>;
             key-positions = <15 27>;
         };
