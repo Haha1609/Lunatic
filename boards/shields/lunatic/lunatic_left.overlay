@@ -46,7 +46,7 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";
+        compatible = "pixart,pmw3610-efogtech";
         init-retry-interval = <20>;
         init-retry-count = <100>;
         reg = <0>;

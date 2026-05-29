@@ -16,8 +16,8 @@ manifest:
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
+      remote: efogdev
+      revision: zephyr-4.1
     - name: zmk-hid-trackball-interface
       remote: englmaxi
       revision: main
