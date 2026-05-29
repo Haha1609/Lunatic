@@ -64,8 +64,6 @@
            fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
            thus, the sensor would be a `wakeup-source` */
         /*   optional features   */
-        snipe-layers = <3>;
-        scroll-layers = <4>;
         /* automouse-layer = <3>; */
     };
 };
