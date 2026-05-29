@@ -50,6 +50,29 @@
 
     };
 
+    //Left hand trackball
+    split_inputs {
+      #address-cells = <1>;
+      #size-cells = <0>;
+
+      trackball_peripheral_split: trackball_peripheral_split@0 {
+        compatible = "zmk,input-split";
+        reg = <0>;
+      };
+    };
+
+    trackball_peripheral_listener: trackball_peripheral_listener {
+      compatible = "zmk,input-listener";
+      status = "disabled";
+      device = <&trackball_peripheral_split>;
+    };
+
+    //right hand trackball
+    trackball_central_listener: trackball_central_listener {
+      compatible = "zmk,input-listener";
+      status = "disabled";
+    };
+
 	encoder_left: encoder_left {
         compatible = "alps,ec11";
       		a-gpios = <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
