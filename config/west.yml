@@ -6,6 +6,10 @@ manifest:
       url-base: https://github.com/inorichi
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: efogdev
+      url-base: https://github.com/efogdev
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +20,15 @@ manifest:
       revision: main
     - name: zmk-hid-trackball-interface
       remote: englmaxi
+      revision: main
+    - name: zmk-behavior-insomnia
+      remote: badjeff
+      revision: main
+    - name: zmk-report-rate-limit
+      remote: efogdev
+      revision: main
+    - name: zmk-input-processor-xyz
+      remote: badjeff
       revision: main
   self:
     path: config
