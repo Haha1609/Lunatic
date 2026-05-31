@@ -64,7 +64,7 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <Mouse>;
+        layers = <Main Mouse>;
         input-processors = <&zip_wheel_scaler 3 1>; //scroll faster x3
     };
 };
@@ -80,7 +80,7 @@
 
 &trackball_central_listener {
     scroller {
-        layers = <Mouse>;
+        layers = <Main>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_to_scroll_mapper>;
