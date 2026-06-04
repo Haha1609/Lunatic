@@ -54,7 +54,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - '&scroll_shift'
-  - '&scroll_shift'
+  - '&scroll_enter'
   - '&mkp MB1'
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - '&mkp MB2'
