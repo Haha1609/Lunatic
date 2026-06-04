@@ -690,7 +690,7 @@ rect.held, rect.combo.held {
 <path d="M437,42 l-110,0" class="combo"/>
 <path d="M437,42 l110,0" class="combo"/>
 <rect rx="6" ry="6" x="423" y="29" width="28" height="26" class="combo"/>
-<text x="437" y="42" class="combo tap"><tspan style="font-size: 75%">&amp;stktech</tspan></text>
+<text x="437" y="42" class="combo tap">&amp;name</text>
 </g>
 </g>
 </g>
@@ -1112,7 +1112,7 @@ rect.held, rect.combo.held {
 <path d="M437,42 l-110,0" class="combo"/>
 <path d="M437,42 l110,0" class="combo"/>
 <rect rx="6" ry="6" x="423" y="29" width="28" height="26" class="combo"/>
-<text x="437" y="42" class="combo tap"><tspan style="font-size: 75%">&amp;stktech</tspan></text>
+<text x="437" y="42" class="combo tap">&amp;name</text>
 </g>
 </g>
 </g>
@@ -1517,7 +1517,7 @@ rect.held, rect.combo.held {
 <path d="M437,42 l-110,0" class="combo"/>
 <path d="M437,42 l110,0" class="combo"/>
 <rect rx="6" ry="6" x="423" y="29" width="28" height="26" class="combo"/>
-<text x="437" y="42" class="combo tap"><tspan style="font-size: 75%">&amp;stktech</tspan></text>
+<text x="437" y="42" class="combo tap">&amp;name</text>
 </g>
 </g>
 </g>
@@ -1921,7 +1921,7 @@ rect.held, rect.combo.held {
 <path d="M437,42 l-110,0" class="combo"/>
 <path d="M437,42 l110,0" class="combo"/>
 <rect rx="6" ry="6" x="423" y="29" width="28" height="26" class="combo"/>
-<text x="437" y="42" class="combo tap"><tspan style="font-size: 75%">&amp;stktech</tspan></text>
+<text x="437" y="42" class="combo tap">&amp;name</text>
 </g>
 </g>
 </g>
@@ -2326,7 +2326,7 @@ rect.held, rect.combo.held {
 <path d="M437,42 l-110,0" class="combo"/>
 <path d="M437,42 l110,0" class="combo"/>
 <rect rx="6" ry="6" x="423" y="29" width="28" height="26" class="combo"/>
-<text x="437" y="42" class="combo tap"><tspan style="font-size: 75%">&amp;stktech</tspan></text>
+<text x="437" y="42" class="combo tap">&amp;name</text>
 </g>
 </g>
 </g>
