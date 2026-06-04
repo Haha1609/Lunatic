@@ -200,17 +200,17 @@
         };
 
         tech {
-            bindings = <&stk>;
+            bindings = <&stktech>;
             key-positions = <5 6>;
         };
     };
 
     macros {
-        stk: stk {
+        stktech: stktech {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp RET &kp LS(T) &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K &kp SPACE &kp RET &kp LS(N) &kp G &kp O &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(H) &kp A>;
-            label = "STK";
+            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp LS(T) &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K &kp SPACE &kp LS(N) &kp G &kp O &kp SPACE &kp LS(T) &kp H &kp U &kp SPACE &kp LS(H) &kp A>;
+            label = "STKTECH";
         };
     };
 
