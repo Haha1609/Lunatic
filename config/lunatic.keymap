@@ -211,7 +211,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp T &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K &kp SPACE &kp N &kp G &kp O &kp SPACE &kp T &kp H &kp U &kp SPACE &kp H &kp A>;
-            fast-activation;
             label = "STKTECH";
         };
     };
