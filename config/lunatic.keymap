@@ -138,6 +138,13 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER>, <&tog 2>;
         };
+
+        stkfull: stkfull {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STKFULL";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&tttt>;
+        };
     };
 
     combos {
@@ -145,8 +152,8 @@
 
         Combo_CLR_BT {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 60>;
-            layers = <1>;
+            key-positions = <0 5>;
+            layers = <3>;
         };
 
         screenshot {
@@ -200,9 +207,21 @@
         };
 
         tech {
-            bindings = <&name>;
+            bindings = <&stktech>;
             key-positions = <5 6>;
             slow-release;
+        };
+
+        ble1 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <13 26>;
+            layers = <3>;
+        };
+
+        ble2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <14 27>;
+            layers = <3>;
         };
     };
 
@@ -210,15 +229,15 @@
         stktech: stktech {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp T &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K &kp SPACE &kp N &kp G &kp O &kp SPACE &kp T &kp H &kp U &kp SPACE &kp H &kp A &none>;
+            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4>;
             label = "STKTECH";
         };
 
-        name: name {
+        tttt: tttt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp H &kp A &kp H &kp A>;
-            label = "NAME";
+            bindings = <&none &kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp N &kp G &kp O &kp SPACE &kp T &kp H &kp U &kp SPACE &kp H &kp A &kp SPACE &kp T &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K>;
+            label = "TTTT";
         };
     };
 
@@ -228,7 +247,7 @@
         Main {
             display-name = "Main";
             bindings = <
-&mt CAPS ESC          &kp N1    &kp N2   &kp N3              &kp N4           &kp N5         &kp N6         &kp N7    &kp N8           &kp N9    &kp N0     &kp MINUS
+&mt CAPS ESC          &kp N1    &kp N2   &kp N3              &kp N4           &kp N5         &kp N6         &kp N7    &kp N8           &kp N9    &kp N0     &stkfull
 &lt 3 TAB             &kp Q     &kp W    &kp E               &kp R            &kp T          &kp Y          &kp U     &kp I            &kp O     &kp P      &kp PLUS
 &lt 1 F2              &kp A     &kp S    &kp D               &kp F            &kp G          &kp H          &kp J     &kp K            &kp L     &kp SEMI   &kp SQT
 &mt LEFT_SHIFT ENTER  &kp Z     &kp X    &kp C               &kp V            &kp B          &kp N          &kp M     &kp COMMA        &kp DOT   &kp FSLH   &kp BSPC
