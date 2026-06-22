@@ -43,7 +43,7 @@
            ;  
 };
 
-&encoder_left {
+//&encoder_right {
     status = "okay";
 };
 
