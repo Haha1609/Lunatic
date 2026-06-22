@@ -44,8 +44,8 @@
 };
 
 //&encoder_right {
-    status = "okay";
-};
+//    status = "okay";
+//};
 
 &pinctrl {
     spi0_default: spi0_default {

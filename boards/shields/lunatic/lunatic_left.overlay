@@ -24,8 +24,8 @@
 };
 
 //&encoder_left {
-    status = "okay";
-};
+//    status = "okay";
+//};
 
 
 
