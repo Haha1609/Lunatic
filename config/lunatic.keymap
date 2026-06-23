@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SCROLLBALL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&to 2>;
+            bindings = <&kp LEFT_SHIFT>, <&tog 2>;
         };
 
         Scroll_U_D: Scroll_U_D {
