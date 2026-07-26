@@ -31,9 +31,9 @@
            ;  
 };
 
-&encoder_left {
-    status = "okay";
-};
+//&encoder_left {
+//    status = "okay";
+//};
 
 &trackball_peripheral_listener {
     status = "okay";
