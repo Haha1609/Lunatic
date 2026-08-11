@@ -223,6 +223,31 @@
             key-positions = <14 27>;
             layers = <3>;
         };
+
+        mouselayer {
+            bindings = <&tog 2>;
+            key-positions = <53 54>;
+        };
+
+        mail1 {
+            bindings = <&gmail1>;
+            key-positions = <1 48>;
+        };
+
+        mail2 {
+            bindings = <&gmail2>;
+            key-positions = <2 48>;
+        };
+
+        hihi {
+            bindings = <&haha>;
+            key-positions = <52 25>;
+        };
+
+        hix {
+            bindings = <&huhu>;
+            key-positions = <52 37>;
+        };
     };
 
     macros {
@@ -236,8 +261,36 @@
         tttt: tttt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp N &kp G &kp O &kp SPACE &kp T &kp H &kp U &kp SPACE &kp H &kp A &kp SPACE &kp T &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K>;
+            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4 &kp SPACE &kp N &kp G &kp O &kp SPACE &kp T &kp H &kp U &kp SPACE &kp H &kp A &kp SPACE &kp T &kp E &kp C &kp H &kp C &kp O &kp M &kp B &kp A &kp N &kp K>;
             label = "TTTT";
+        };
+
+        gmail1: gmail1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N6 &kp N0 &kp N9 &kp H &kp A &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "GMAIL1";
+        };
+
+        gmail2: gmail2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A &kp DOT &kp N &kp T &kp N1 &kp N6 &kp N0 &kp N9 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "GMAIL2";
+        };
+
+        haha: haha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp RPAR &kp RPAR &kp RPAR &kp RPAR &kp RPAR>;
+            label = "HAHA";
+        };
+
+        huhu: huhu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp LPAR &kp LPAR &kp LPAR &kp LPAR &kp LPAR>;
+            label = "HUHU";
         };
     };
 
@@ -247,12 +300,12 @@
         Main {
             display-name = "Main";
             bindings = <
-&mt CAPS ESC          &kp N1    &kp N2   &kp N3              &kp N4           &kp N5         &kp N6         &kp N7    &kp N8           &kp N9    &kp N0     &stkfull
-&lt 3 TAB             &kp Q     &kp W    &kp E               &kp R            &kp T          &kp Y          &kp U     &kp I            &kp O     &kp P      &kp PLUS
-&lt 1 F2              &kp A     &kp S    &kp D               &kp F            &kp G          &kp H          &kp J     &kp K            &kp L     &kp SEMI   &kp SQT
-&mt LEFT_SHIFT ENTER  &kp Z     &kp X    &kp C               &kp V            &kp B          &kp N          &kp M     &kp COMMA        &kp DOT   &kp FSLH   &kp BSPC
-                      &kp BSPC  &kp DEL  &mt LEFT_ALT SPACE  &mt LCTRL ENTER  &scroll_shift  &scroll_enter  &mkp MB1  &mt LCTRL SPACE  &mkp MB2  &kp LGUI
-                      &kp LEFT  &kp UP   &kp C_PLAY_PAUSE    &kp DOWN         &kp RIGHT      &kp LEFT       &kp DOWN  &kp RET          &kp UP    &kp RIGHT
+&mt CAPS ESC          &kp N1    &kp N2   &kp N3              &kp N4           &kp N5         &kp N6     &kp N7    &kp N8           &kp N9    &kp N0     &kp MINUS
+&lt 3 TAB             &kp Q     &kp W    &kp E               &kp R            &kp T          &kp Y      &kp U     &kp I            &kp O     &kp P      &kp EQUAL
+&lt 1 F2              &kp A     &kp S    &kp D               &kp F            &kp G          &kp H      &kp J     &kp K            &kp L     &kp SEMI   &kp SQT
+&mt LEFT_SHIFT ENTER  &kp Z     &kp X    &kp C               &kp V            &kp B          &kp N      &kp M     &kp COMMA        &kp DOT   &kp FSLH   &kp BSPC
+                      &kp BSPC  &kp DEL  &mt LEFT_ALT SPACE  &mt LCTRL ENTER  &scroll_shift  &kp ENTER  &mkp MB1  &mt LCTRL SPACE  &mkp MB2  &kp LGUI
+                      &kp LEFT  &kp UP   &kp C_PLAY_PAUSE    &kp DOWN         &kp RIGHT      &kp LEFT   &kp DOWN  &kp RET          &kp UP    &kp RIGHT
             >;
 
             sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
@@ -261,12 +314,12 @@
         Num {
             display-name = "Num";
             bindings = <
-&kp GRAVE  &kp N6         &kp N7        &kp N8     &kp N9        &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp Y          &kp U         &kp I      &kp O         &kp P     &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp H          &kp J         &kp K      &kp L         &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp N          &kp M         &kp COMMA  &kp DOT       &kp FSLH  &trans  &trans  &trans  &trans  &trans  &trans
-           &trans         &trans        &trans     &trans        &trans    &trans  &trans  &trans  &trans  &trans
-           &kp BACKSPACE  &kp C_VOL_UP  &trans     &kp C_VOL_DN  &kp DEL   &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp N6    &kp N7        &kp N8     &kp N9        &kp N0    &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &trans
+&kp MINUS  &kp Y     &kp U         &kp I      &kp O         &kp P     &kp Q     &kp W   &kp E   &kp R   &kp T     &trans
+&trans     &kp H     &kp J         &kp K      &kp L         &kp SEMI  &kp A     &kp S   &kp D   &kp F   &kp G     &trans
+&trans     &kp N     &kp M         &kp COMMA  &kp DOT       &kp FSLH  &kp Z     &kp X   &kp C   &kp V   &kp B     &trans
+           &trans    &trans        &trans     &trans        &trans    &trans    &trans  &trans  &trans  &trans
+           &mkp MB4  &kp C_VOL_UP  &trans     &kp C_VOL_DN  &mkp MB5  &mkp MB4  &trans  &trans  &trans  &mkp MB5
             >;
 
             sensor-bindings = <&Scroll_LR>, <&Scroll_LR>;
