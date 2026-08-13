@@ -262,6 +262,11 @@
             bindings = <&huhu>;
             key-positions = <52 37>;
         };
+
+        tog1 {
+            bindings = <&tog 1>;
+            key-positions = <52 51>;
+        };
     };
 
     macros {
