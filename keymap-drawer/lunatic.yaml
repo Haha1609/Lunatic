@@ -387,3 +387,5 @@ combos:
   k: '&haha'
 - p: [52, 37]
   k: '&huhu'
+- p: [52, 51]
+  k: {t: Num, h: toggle}
