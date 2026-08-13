@@ -40,8 +40,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
-  - C
-  - V
+  - '&copy'
+  - '&paste'
   - B
   - N
   - M
