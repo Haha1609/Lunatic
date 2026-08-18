@@ -40,8 +40,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - '&mkp MB3'
-  - '&mkp MB2'
+  - '&mkp MB1'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   Num:
   - {t: '$$mdi:transfer$$', type: trans}
