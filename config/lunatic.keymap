@@ -264,7 +264,7 @@
         };
 
         tog1 {
-            bindings = <&tog 1>;
+            bindings = <&tog 3>;
             key-positions = <52 51>;
         };
     };
