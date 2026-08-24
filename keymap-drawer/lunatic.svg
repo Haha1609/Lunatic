@@ -728,8 +728,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="338" y="250" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="352" y="263" class="combo tap layer-activator">Num</text>
+<a href="#x_x">
+<text x="352" y="263" class="combo tap layer-activator">3</text>
 </a><text x="352" y="274" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1194,8 +1194,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="338" y="250" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="352" y="263" class="combo tap layer-activator">Num</text>
+<a href="#x_x">
+<text x="352" y="263" class="combo tap layer-activator">3</text>
 </a><text x="352" y="274" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1635,8 +1635,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="338" y="250" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="352" y="263" class="combo tap layer-activator">Num</text>
+<a href="#x_x">
+<text x="352" y="263" class="combo tap layer-activator">3</text>
 </a><text x="352" y="274" class="combo hold">toggle</text>
 </g>
 </g>
@@ -2093,8 +2093,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="338" y="250" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="352" y="263" class="combo tap layer-activator">Num</text>
+<a href="#x_x">
+<text x="352" y="263" class="combo tap layer-activator">3</text>
 </a><text x="352" y="274" class="combo hold">toggle</text>
 </g>
 </g>
@@ -2534,8 +2534,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="338" y="250" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="352" y="263" class="combo tap layer-activator">Num</text>
+<a href="#x_x">
+<text x="352" y="263" class="combo tap layer-activator">3</text>
 </a><text x="352" y="274" class="combo hold">toggle</text>
 </g>
 </g>
