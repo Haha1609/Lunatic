@@ -80,7 +80,7 @@
 
 &trackball_central_listener {
     scroller {
-        layers = <Num>;
+        layers = <Main>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_to_scroll_mapper>;
