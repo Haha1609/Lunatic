@@ -1,18 +1,9 @@
-if SHIELD_lunatic_RIGHT
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-# Name must be less than 16 characters long!
+if SHIELD_lunatic
+
 config ZMK_KEYBOARD_NAME
     default "lunatic"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
 endif
-
-if SHIELD_lunatic_LEFT || SHIELD_lunatic_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif
-

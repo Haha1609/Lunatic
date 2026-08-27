@@ -14,7 +14,7 @@ features:
   - pointer
   - encoder
 siblings:
-  - lunatic_left
-  - lunatic_right
+  - lunatic
+
 
   

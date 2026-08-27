@@ -1,10 +1,5 @@
 # No whitespace after the comma or in your part name!
-config SHIELD_lunatic_LEFT
+config SHIELD_lunatic
     def_bool $(shields_list_contains,lunatic_left)
-
-# No whitespace after the comma or in your part name!
-config SHIELD_lunatic_RIGHT
-    def_bool $(shields_list_contains,lunatic_right)
-
 
 CONFIG_ZMK_SOFT_OFF=y
